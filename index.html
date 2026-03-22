@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Growth Apex | Elite Marketing Architecture</title>
+
+    <!-- Google Fonts: Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                    },
+                    colors: {
+                        apexred: {
+                            DEFAULT: '#E63946',
+                            dark: '#C1121F',
+                            light: '#FF4D4D'
+                        },
+                        apexbg: '#0A0A0C',
+                        apexcard: '#141419',
+                        apexborder: '#22222A',
+                        charcoal: '#1A1A1A'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Animations */
+        @keyframes pulse-soft {
+
+            0%,
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(230, 57, 70, 0.4);
+            }
+
+            50% {
+                transform: scale(1.02);
+                box-shadow: 0 0 0 15px rgba(230, 57, 70, 0);
+            }
+        }
+
+        .btn-pulse {
+            animation: pulse-soft 2s infinite;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body class="font-sans text-gray-300 antialiased bg-apexbg selection:bg-apexred selection:text-white">
+
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-40 bg-apexbg/90 backdrop-blur-md border-b border-apexborder shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <img src="https://www.growthapex.in/logo.png" alt="Growth Apex Logo" class="h-10 md:h-12 w-auto"
+                        onerror="this.src='https://via.placeholder.com/150x50?text=Growth+Apex'">
+                </div>
+                <div class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-400">
+                    <a href="#" class="hover:text-white transition-colors">About Us</a>
+                    <a href="#services" class="hover:text-white transition-colors">Services</a>
+                    <a href="#" class="hover:text-white transition-colors">Results</a>
+                    <a href="#" class="hover:text-white transition-colors">Process</a>
+                    <a href="#" class="hover:text-white transition-colors">Blog</a>
+                </div>
+                <div>
+                    <a href="#form-section"
+                        class="hidden md:inline-flex items-center justify-center px-6 py-2.5 text-sm font-bold rounded-md text-white bg-apexred hover:bg-apexred-dark transition-all shadow-[0_0_15px_rgba(230,57,70,0.3)] hover:shadow-[0_0_20px_rgba(230,57,70,0.5)]">
+                        Book Call
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Front-Facing Form -->
+    <section class="relative pt-20 pb-28 lg:pt-32 lg:pb-36 overflow-hidden">
+        <!-- Background Image with Dark Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+                alt="Strategy Planning" class="w-full h-full object-cover opacity-20 grayscale">
+            <div class="absolute inset-0 bg-gradient-to-t from-apexbg via-apexbg/90 to-apexbg/50"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-center">
+
+                <!-- Text Content (Left Side) -->
+                <div class="lg:col-span-7 text-center lg:text-left">
+                    <div
+                        class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-apexcard text-apexred text-xs md:text-sm font-bold tracking-wide uppercase mb-6 border border-apexborder">
+                        <span class="w-2 h-2 rounded-full bg-apexred animate-pulse"></span>
+                        YOUR UNFAIR ADVANTAGE IN A CROWDED MARKET
+                    </div>
+
+                    <h1
+                        class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white tracking-tight mb-6 leading-tight">
+                        Dominate Your Market With <br class="hidden md:block">
+                        <span
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-apexred to-[#FF9B71]">Predictable
+                            Revenue Engines</span>
+                    </h1>
+
+                    <p class="mt-6 text-lg md:text-xl text-gray-400 font-medium mb-4 mx-auto lg:mx-0 max-w-2xl">
+                        <span class="font-bold text-white block mb-2">"Hum ads nahi chalate — hum predictable revenue
+                            systems build karte hain."</span>
+                        Growth Apex operates as your elite growth partner. We refuse to act like a standard vendor.
+                    </p>
+
+                    <p class="text-base md:text-lg text-gray-400 mb-6 mx-auto lg:mx-0 max-w-2xl">
+                        We engineer ruthless, high-converting growth systems for ambitious founders—triggering a massive
+                        surge of hyper-qualified leads, high-ticket clients, and explosive revenue growth.
+                    </p>
+
+                    <p class="text-white font-bold text-lg md:text-xl mb-8 mx-auto lg:mx-0">
+                        ⚡ Funnels. Ads. Content. Bulletproof Conversion Systems.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <a href="#services"
+                            class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-lg font-bold rounded-lg text-white bg-apexcard hover:bg-[#1C1C24] border border-apexborder transition-all">
+                            Expose Our Proven Arsenal &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Front-Facing Form (Right Side) -->
+                <div class="lg:col-span-5 w-full max-w-md mx-auto lg:max-w-none" id="form-section">
+                    <div
+                        class="bg-apexcard/95 backdrop-blur-sm rounded-2xl border-t-8 border-apexred border-b border-l border-r border-apexborder p-6 sm:p-8 shadow-2xl relative">
+
+                        <!-- Active Form View -->
+                        <div id="form-content">
+                            <div class="text-center mb-8">
+                                <h3 class="text-2xl font-extrabold text-white mb-2">Secure Your Call</h3>
+                                <p class="text-gray-400 text-sm">Enter your details below to apply for your free growth
+                                    strategy session.</p>
+                            </div>
+
+                            <form id="leadForm" onsubmit="handleFormSubmit(event)" class="space-y-5 text-left">
+                                <div>
+                                    <label for="name" class="block text-sm font-bold text-gray-300 mb-2">Full
+                                        Name</label>
+                                    <input type="text" id="name" name="name" required
+                                        class="w-full bg-apexbg border border-apexborder rounded-lg px-4 py-3 text-white focus:outline-none focus:border-apexred focus:ring-1 focus:ring-apexred transition-colors"
+                                        placeholder="e.g. John Doe">
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-sm font-bold text-gray-300 mb-2">Email
+                                        Address</label>
+                                    <input type="email" id="email" name="email" required
+                                        class="w-full bg-apexbg border border-apexborder rounded-lg px-4 py-3 text-white focus:outline-none focus:border-apexred focus:ring-1 focus:ring-apexred transition-colors"
+                                        placeholder="e.g. john@company.com">
+                                </div>
+                                <div>
+                                    <label for="phone" class="block text-sm font-bold text-gray-300 mb-2">Phone
+                                        Number</label>
+                                    <input type="tel" id="phone" name="phone" required
+                                        class="w-full bg-apexbg border border-apexborder rounded-lg px-4 py-3 text-white focus:outline-none focus:border-apexred focus:ring-1 focus:ring-apexred transition-colors"
+                                        placeholder="e.g. +91 98765 43210">
+                                </div>
+                                <button type="submit"
+                                    class="btn-pulse w-full inline-flex items-center justify-center px-8 py-4 text-lg font-bold rounded-lg text-white bg-apexred hover:bg-apexred-dark transition-all shadow-[0_0_15px_rgba(230,57,70,0.3)] hover:shadow-[0_0_25px_rgba(230,57,70,0.5)] mt-4">
+                                    Apply Now &rarr;
+                                </button>
+                            </form>
+                        </div>
+
+                        <!-- Success Message View (Hidden by default) -->
+                        <div id="success-message" class="hidden text-center py-8">
+                            <div
+                                class="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-[#1F1517] mb-6 border border-red-900/30">
+                                <svg class="h-8 w-8 text-[#25D366]" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-extrabold text-white mb-4">Application Received!</h3>
+                            <p class="text-gray-400 leading-relaxed mb-8">Thank you for applying. Our team will review
+                                your details and contact you shortly to schedule your strategic growth session.</p>
+                            <button onclick="resetForm()"
+                                class="inline-flex items-center justify-center px-6 py-2 text-sm font-bold rounded-lg text-white bg-apexbg border border-apexborder hover:bg-[#1C1C24] transition-all">
+                                Submit Another Application
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-20 bg-apexbg border-t border-apexborder">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-extrabold text-white tracking-tight">Savage Execution. Undeniable
+                    Results.</h2>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="relative rounded-3xl overflow-hidden shadow-2xl h-[500px] border border-apexborder">
+                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                        alt="Team Strategy" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-apexbg/80 to-transparent"></div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <!-- Stat 1 -->
+                    <div
+                        class="bg-apexcard rounded-3xl p-8 border border-apexborder hover:border-apexred/50 transition-colors">
+                        <h3 class="text-5xl font-extrabold text-white mb-2">3<span class="text-apexred">+</span></h3>
+                        <p class="text-sm font-bold tracking-widest text-white uppercase mb-4">Years Dominance</p>
+                        <p class="text-gray-500 text-sm leading-relaxed">We’ve engineered and ruthlessly optimized
+                            profit-pulling marketing systems for service businesses, consultants, and premium brands.
+                        </p>
+                    </div>
+                    <!-- Stat 2 -->
+                    <div
+                        class="bg-apexcard rounded-3xl p-8 border border-apexborder hover:border-apexred/50 transition-colors">
+                        <h3 class="text-5xl font-extrabold text-white mb-2">50<span class="text-apexred">+</span></h3>
+                        <p class="text-sm font-bold tracking-widest text-white uppercase mb-4">Hyper-Converting Funnels
+                        </p>
+                        <p class="text-gray-500 text-sm leading-relaxed">Sales funnels and aggressive paid ad campaigns
+                            hardwired for predictable, high-ticket lead generation and rapid scaling.</p>
+                    </div>
+                    <!-- Stat 3 -->
+                    <div
+                        class="bg-apexcard rounded-3xl p-8 border border-apexborder hover:border-apexred/50 transition-colors">
+                        <h3 class="text-5xl font-extrabold text-white mb-2">1 <span class="text-apexred">Cr+</span></h3>
+                        <p class="text-sm font-bold tracking-widest text-white uppercase mb-4">Ad Spend Deployed</p>
+                        <p class="text-gray-500 text-sm leading-relaxed">Battle-tested experience scaling Meta & Google
+                            Ads with a ruthless, uncompromising focus on skyrocketing your ROI.</p>
+                    </div>
+                    <!-- Stat 4 -->
+                    <div
+                        class="bg-apexcard rounded-3xl p-8 border border-apexborder hover:border-apexred/50 transition-colors">
+                        <h3 class="text-5xl font-extrabold text-white mb-2">94<span class="text-apexred">%</span></h3>
+                        <p class="text-sm font-bold tracking-widest text-white uppercase mb-4">Client Scale Rate</p>
+                        <p class="text-gray-500 text-sm leading-relaxed">Our partners experience a massive surge in
+                            qualified lead flow, sky-high conversion rates, and bulletproof growth engines.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Ecosystem Section -->
+    <section id="services" class="py-24 bg-apexbg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-6xl font-extrabold text-white mb-4 tracking-tight">One Lethal
+                    Ecosystem.<br><span
+                        class="text-transparent bg-clip-text bg-gradient-to-r from-apexred to-[#FF9B71]">Explosive
+                        Revenue Channels.</span></h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Service 1 -->
+                <div
+                    class="bg-apexcard rounded-[2rem] p-10 lg:p-12 border border-apexborder shadow-xl hover:shadow-[0_0_30px_rgba(230,57,70,0.05)] transition-shadow">
+                    <div
+                        class="w-14 h-14 bg-[#1F1517] rounded-xl flex items-center justify-center mb-8 border border-red-900/30">
+                        <svg class="w-6 h-6 text-apexred" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-3xl font-bold text-white mb-4">Full-Stack Social Authority</h3>
+                    <p class="text-gray-500 mb-10 text-lg">Hijack attention, command undeniable authority, and build a
+                        cult-like following across major platforms.</p>
+                    <ul class="space-y-5">
+                        <li class="flex items-start gap-4">
+                            <svg class="w-6 h-6 text-apexred flex-shrink-0" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="text-gray-300 font-medium">Aggressive content strategy & planning</span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <svg class="w-6 h-6 text-apexred flex-shrink-0" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="text-gray-300 font-medium">Psychological scripting & storytelling</span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <svg class="w-6 h-6 text-apexred flex-shrink-0" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="text-gray-300 font-medium">High-retention video editing</span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <svg class="w-6 h-6 text-apexred flex-shrink-0" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="text-gray-300 font-medium">Relentless posting systems</span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <svg class="w-6 h-6 text-apexred flex-shrink-0" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="text-gray-300 font-medium">Deep-dive performance analytics</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div
+                    class="bg-apexcard rounded-[2rem] p-10 lg:p-12 border border-apexborder shadow-xl hover:shadow-[0_0_30px_rgba(230,57,70,0.05)] transition-shadow">
+                    <div
+                        class="w-14 h-14 bg-[#1F1517] rounded-xl flex items-center justify-center mb-8 border border-red-900/30">
+                        <svg class="w-6 h-6 text-apexred" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-3xl font-bold text-white mb-4">Performance Marketing (Paid Ads)</h3>
+                    <p class="text-gray-500 mb-10 text-lg">Force profitable growth with ruthless ad campaigns that
+                        obliterate your CPA and scale to the moon.</p>
+                    <ul class="space-y-5">
+                        <li class="flex items-start gap-4">
+                            <svg class="w-6 h-6 text-apexred flex-shrink-0" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="text-gray-300 font-medium">High-impact Meta & Google Ads</span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <svg class="w-6 h-6 text-apexred flex-shrink-0" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="text-gray-300 font-medium">Sniper-precise audience targeting</span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <svg class="w-6 h-6 text-apexred flex-shrink-0" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="text-gray-300 font-medium">Funnel-based rapid conversion strategies</span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <svg class="w-6 h-6 text-apexred flex-shrink-0" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="text-gray-300 font-medium">Ruthless data-driven scaling</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Service 3 (Wide Card) -->
+            <div
+                class="mt-8 bg-apexcard rounded-[2rem] p-10 lg:p-12 border border-apexborder shadow-xl hover:shadow-[0_0_30px_rgba(230,57,70,0.05)] transition-shadow">
+                <div class="flex flex-col lg:flex-row gap-12 items-center">
+                    <div class="lg:w-1/2">
+                        <div
+                            class="w-14 h-14 bg-[#1F1517] rounded-xl flex items-center justify-center mb-8 border border-red-900/30">
+                            <svg class="w-6 h-6 text-apexred" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-3xl md:text-4xl font-bold text-white mb-4">Conversion-Focused Content Creation
+                        </h3>
+                        <p class="text-gray-500 text-lg">Hypnotic content engineered to hijack attention, cement your
+                            authority, and trigger rapid-fire sales.</p>
+                    </div>
+                    <div class="lg:w-1/2 w-full">
+                        <ul class="space-y-6">
+                            <li class="flex items-center gap-4">
+                                <svg class="w-6 h-6 text-apexred flex-shrink-0" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-gray-300 font-medium text-lg">Hook-driven hypnotic scripting</span>
+                            </li>
+                            <li class="flex items-center gap-4">
+                                <svg class="w-6 h-6 text-apexred flex-shrink-0" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-gray-300 font-medium text-lg">Short-form highly viral videos</span>
+                            </li>
+                            <li class="flex items-center gap-4">
+                                <svg class="w-6 h-6 text-apexred flex-shrink-0" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-gray-300 font-medium text-lg">Aggressive conversion-focused
+                                    creatives</span>
+                            </li>
+                            <li class="flex items-center gap-4">
+                                <svg class="w-6 h-6 text-apexred flex-shrink-0" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-gray-300 font-medium text-lg">Personal brand domination systems</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Qualification Filter -->
+    <section class="py-20 bg-apexbg border-y border-apexborder">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-extrabold text-white mb-4">We Refuse To Work With Everyone.</h2>
+                <p class="text-gray-500 text-lg">This elite level of growth architecture demands uncompromising
+                    commitment and ambition.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <div class="bg-apexcard rounded-3xl p-8 border border-apexborder border-t-4 border-t-[#25D366]">
+                    <h3 class="text-xl font-bold text-white mb-6 flex items-center gap-2">
+                        <svg class="w-6 h-6 text-[#25D366]" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        WHO WE ACCEPT
+                    </h3>
+                    <ul class="space-y-4 text-gray-400">
+                        <li class="flex items-start gap-2"><span class="text-[#25D366] font-bold">✓</span> Spending ₹3L+
+                            per month on paid acquisition</li>
+                        <li class="flex items-start gap-2"><span class="text-[#25D366] font-bold">✓</span> Founder / CEO
+                            / decisive action-taker</li>
+                        <li class="flex items-start gap-2"><span class="text-[#25D366] font-bold">✓</span> Proven offer
+                            & undeniable product-market fit</li>
+                        <li class="flex items-start gap-2"><span class="text-[#25D366] font-bold">✓</span> Relentlessly
+                            serious about scalable, long-term dominance</li>
+                    </ul>
+                </div>
+
+                <div class="bg-apexcard rounded-3xl p-8 border border-apexborder border-t-4 border-t-apexred">
+                    <h3 class="text-xl font-bold text-white mb-6 flex items-center gap-2">
+                        <svg class="w-6 h-6 text-apexred" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        WHO WE REJECT
+                    </h3>
+                    <ul class="space-y-4 text-gray-400">
+                        <li class="flex items-start gap-2"><span class="text-apexred font-bold">✕</span> Businesses
+                            bleeding cash below ₹3L/month</li>
+                        <li class="flex items-start gap-2"><span class="text-apexred font-bold">✕</span> Amateurs
+                            starting from scratch with unproven offers</li>
+                        <li class="flex items-start gap-2"><span class="text-apexred font-bold">✕</span> People
+                            desperately seeking magic "growth hacks"</li>
+                        <li class="flex items-start gap-2"><span class="text-apexred font-bold">✕</span> Businesses
+                            lacking the capacity to fulfill massive scale</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-24 bg-apexbg text-center px-4">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-6">Ready to Weaponize Your Marketing &
+                Dominate?</h2>
+            <p class="text-gray-400 text-xl mb-10 italic">"Hum ads nahi chalate — hum apka business scale karte hain."
+                <br><span class="not-italic block mt-2 font-medium">Lock in your 100% free, no-BS strategy consultation
+                    and unlock the exact blueprint your business needs to scale.</span></p>
+
+            <a href="#form-section"
+                class="w-full sm:w-auto inline-flex items-center justify-center px-10 py-5 text-xl font-extrabold rounded-lg text-white bg-apexred hover:bg-apexred-dark transition-all shadow-[0_0_20px_rgba(230,57,70,0.4)] hover:shadow-[0_0_30px_rgba(230,57,70,0.6)] hover:scale-105 transform duration-200">
+                Secure Your Explosive Strategy Call &rarr;
+            </a>
+            <p class="mt-6 text-gray-500 flex justify-center items-center gap-2 font-bold">
+                <svg class="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd"
+                        d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"
+                        clip-rule="evenodd"></path>
+                </svg>
+                Warning: We only accept 5 strategy calls per week.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-apexcard border-t border-apexborder text-gray-500 py-8 text-center text-sm">
+        <div class="max-w-7xl mx-auto px-4">
+            <p>&copy; 2026 Growth Apex. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Interactive Scripts -->
+    <script>
+        // Handle Form Submission -> Sends data to Google Sheets 
+        async function handleFormSubmit(event) {
+            event.preventDefault(); // Prevent page reload
+
+            const form = event.target;
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+
+            // Show loading state
+            submitBtn.innerHTML = 'Processing...';
+            submitBtn.disabled = true;
+            submitBtn.classList.add('opacity-75', 'cursor-not-allowed');
+            submitBtn.classList.remove('btn-pulse'); // Remove animation during loading
+
+            // 1. Prepare data using FormData
+            const formData = new FormData(form);
+            // 2. Convert to URLSearchParams for perfect Google Apps Script compatibility
+            const data = new URLSearchParams();
+            for (const [key, value] of formData.entries()) {
+                data.append(key, value);
+            }
+
+            // REPLACE THIS URL with your deployed Google Apps Script Web App URL
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzGG6yc-GK67aAO5tANuPjUD6ka_F_Q-W8P6HCPMlTxlHdydilVLX8sL2MeQiZJMQyZ/exec';
+
+            try {
+                // 3. Send to Google Sheets (using no-cors to avoid CORS errors with Google)
+                await fetch(scriptURL, {
+                    method: 'POST',
+                    body: data,
+                    mode: 'no-cors'
+                });
+
+                // 4. Hide the form and show the success message inline
+                document.getElementById('form-content').classList.add('hidden');
+                document.getElementById('success-message').classList.remove('hidden');
+
+            } catch (error) {
+                console.error('Error!', error.message);
+                alert('Something went wrong connecting to the server. Please try again.');
+            } finally {
+                // Restore button state
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+                submitBtn.classList.remove('opacity-75', 'cursor-not-allowed');
+                submitBtn.classList.add('btn-pulse');
+            }
+        }
+
+        // Optional: Allows a user to reset and submit another application
+        function resetForm() {
+            document.getElementById('leadForm').reset();
+            document.getElementById('success-message').classList.add('hidden');
+            document.getElementById('form-content').classList.remove('hidden');
+        }
+    </script>
+</body>
+
+</html>
